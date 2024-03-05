@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+
+ * {
+	 box-sizing: border-box;
+	 font-family: "Roboto", sans-serif;
+	 margin: 0;
+	 padding: 0;
+}
+
+body{
+  background: linear-gradient(89deg, wheat 37% , gray 56%);
+}
+
+.header{
+  font-size: 4.5vh;
+  text-align: center;
+  row-gap: 10px;
+  margin: 30px;
+}
+
+header .owner{
+  font-size: 1.5vh;
+  margin: 5px;
+  animation: owner 0.5s alternate infinite;
+}
+ .input-wrapper {
+	 max-width: 500px;
+	 margin: 0 auto;
+	 width: 100%;
+	 display: flex;
+	 gap: 7px;
+	 margin-top: 50px;
+}
+ .input-wrapper .name-input {
+	 width: 100%;
+	 height: 42px;
+	 border-radius: 10px;
+	 border: 1px solid #ccc;
+	 outline: 0;
+	 font-size: 14px;
+	 padding: 0 16px;
+	 color: #333;
+   font-weight: bold;
+   border: 1px solid black;
+   cursor: pointer;
+   height: 10vh;
+   background-color: wheat;
+}
+ .input-wrapper .name-input::placeholder {
+	 color: #777;
+}
+ .input-wrapper .btn {
+	 height: 5vh;
+	 border-radius: 10px;
+	 border: 0;
+	 background-color: grayscale;
+	 color: wheat;
+	 padding: 0 16px;
+	 font-size: 14px;
+	 font-weight: 600;
+	 letter-spacing: 0.03em;
+	 cursor: pointer;
+	 transition: 0.5s all ease-in-out;
+
+}
+ .input-wrapper .btn:hover {
+	 background-color: #4d4d4d;
+  height: 10vh;
+}
+ .tag-container {
+	 display: flex;
+	 justify-content: center;
+	 flex-wrap: wrap;
+	 gap: 10px;
+	 max-width: 900px;
+	 margin: 0 auto;
+	 width: 100%;
+	 margin-top: 50px;
+   animation: container 2.5s alternate infinite;
+}
+ .name-tag {
+	 max-width: 250px;
+	 width: 100%;
+	 border: 10px double black;
+	 border-radius: 20px;
+	 overflow: hidden;
+	 background:linear-gradient(68deg, grey 40% , wheat 65%);
+	 padding: 8px 0 20px;
+}
+ .name-tag__header {
+	 color: #fff;
+}
+ .name-tag__hello {
+	 font-size: 25px;
+	 text-transform: uppercase;
+	 text-align: center;
+	 margin-bottom: 5px;
+   border-radius: 10px;
+   
+}
+ .name-tag__introduction {
+	 text-align: center;
+	 margin-bottom: 5px;
+	 font-size: 20px;
+  word-spacing: 40%;
+  animation: introduction 2.5s alternate infinite;
+  overflow: hidden; 
+  color: black;
+  font-weight: bold;
+
+}
+ .name-tag__name-container {
+	 background: linear-gradient(89deg, wheat 27%, purple 76%);
+	 font-size: 25px;
+	 color: #222;
+	 height: 42px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+   border-radius: 10px;
+   height: 15vh;
+   margin: 10px;
+   animation: tag 0.3s alternate infinite;
+   font-weight: bold;
+}
+ .name-tag__name {
+	 font-family: "Montserrat", sans-serif;
+}
+ 
+@keyframes introduction{
+  from{
+    transform: scale(0.7);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes container{
+  from{
+    transform: scale(0.7);
+  }
+  to{
+    transform: scale(0.8);
+  }
+}
+
+@keyframes owner {
+  from{
+    transform: scale(0.3);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+@keyframes tag {
+  from{
+    transform: scale(0.5);
+  }
+  to{
+    transform: scale(0.7);
+  }
+}
